@@ -81,4 +81,6 @@ if has('mouse_sgr')
   set ttymouse=sgr
 endif
 
+" match trailing spaces and tab characters
+:match ExtraWhitespace /\s\+$\|\ze\t/
 
