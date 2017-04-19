@@ -96,3 +96,11 @@ test -f /opt/boxen/env.sh && source /opt/boxen/env.sh
 # added by travis gem
 [ -f /Users/fvoges/.travis/travis.sh ] && source /Users/fvoges/.travis/travis.sh
 
+if [ -f  ~/.bash-git-prompt/gitprompt.sh ]
+then
+  GIT_PROMPT_ONLY_IN_REPO=1
+  GIT_PROMPT_SHOW_UPSTREAM=1
+  GIT_PROMPT_THEME=Solarized
+  GIT_PROMPT_THEME=Single_line_Solarized
+  source ~/.bash-git-prompt/gitprompt.sh
+fi
