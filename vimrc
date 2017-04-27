@@ -67,7 +67,7 @@ set mouse=a
 set background=dark
 let g:solarized_termcolors=256
 
-colorscheme wombat256mod
+colorscheme solarized
 let g:airline_powerline_fonts = 1
 let g:airline_theme='wombat'
 let g:airline#extensions#hunks#enabled = 0
