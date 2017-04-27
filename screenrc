@@ -50,7 +50,7 @@ defbce "on"
 
 # JJM These caption lines provide the bottom "tab" bar.
 # caption string "%{= Kd} %{g}%H%{-} %?%-Lw%?%{c}(%{W}%n%f %t%{-})%{-}%?%+Lw%?%= %{d}%?%{C}[%{W}%h%{-}] %?"
-caption always "%{= bW} %{Y}%H%{-} %?%-Lw%?%{M}{%{Y}%n%f %{-}%{C}%t%{-}}%{-}%?%+Lw%?%= %{d}%?%{C}[%{W}%t %h%{-}] %?"
+caption always "%{= kb} %{Y}%H%{-} %?%-Lw%?%{M}{%{Y}%n%f %{-}%{C}%t%{-}}%{-}%?%+Lw%?%= %{d}%?%{C}[%{W}%t %h%{-}] %?"
 
 # Mouse wheel scrollback support
 # see http://stackoverflow.com/questions/359109/using-the-scrollwheel-in-gnu-screen
