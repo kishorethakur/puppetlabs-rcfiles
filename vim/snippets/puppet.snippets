@@ -86,8 +86,8 @@ snippet File
 	${4}
 snippet file
 	file { '${1:/path/to/file}':
-		ensure  => '${3:directory, file, link, absent}',
-		source  => "puppet:///modules/${module_name}/${2:$1}",
+		ensure  => '${2:directory, file, link, absent}',
+		source  => "puppet:///modules/${module_name}/${3:$1}",
 		owner   => '${4:root}',
 		group   => '${5:root}',
 		mode    => '${6:0644}',
@@ -216,11 +216,11 @@ snippet class Package, Config, Service, Params Pattern
 		$svc_ensure  = $1::params::svc_ensure,
 	) inherits $1::params {
 
-		anchor { '$1::begin': }  ->
-		class { '$1::package': } ->
-		class { '$1::config': }  ~>
-		class { '$1::service': } ->
-		anchor { '$1::end': }
+		contain $1::package
+		contain $1::config
+		contain $1::service
+
+		Class['$1::package'] -> Class['$1::config'] ~> Class['$1::service']
 		${4:}
 	}
 	# ex: set et sw=2 ts=2 ft=puppet:
