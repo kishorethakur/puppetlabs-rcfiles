@@ -65,6 +65,10 @@ count=0
 create_link ${SRCDIR} bashrc local
 test $? == 0 && let count++
 
+# mintty (Cygwin)
+create_link ${SRCDIR} minttyrc local
+test $? == 0 && let count++
+
 # vim
 create_link ${SRCDIR} vimrc pre-rcfiles
 test $? == 0 && let count++
