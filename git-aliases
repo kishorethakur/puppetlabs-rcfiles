@@ -1,0 +1,41 @@
+
+
+a = add
+aa = add -A
+ap = add -p
+b = branch
+ba = branch -a
+bav = branch -av
+bd = branch -D
+br = branch
+bv = branch -avv
+c = commit
+ca = commit -a
+cam = commit -a -m
+cm = commit -m
+co = checkout
+cp = cherry-pick
+d = diff
+dc = diff --cached
+df = diff
+dn = diff --numstat
+ds = diff --staged
+dst = diff --stat
+dt = difftool
+hist = log --pretty=format:'%h %ad | %s%d [%an <%ae>]' --graph --date=short
+l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+l1 = log --pretty=oneline
+lg = log -p
+log-date = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+lol = log --graph --decorate --pretty=oneline --abbrev-commit
+lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+lolp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+m = commit -m
+mt = mergetool
+p = push
+pa = push --all
+rv = remote -v
+s = status
+st = status
+tree = log --oneline --decorate --graph
+undo-commit = reset --soft HEAD^
